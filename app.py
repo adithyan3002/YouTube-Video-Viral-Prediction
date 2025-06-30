@@ -8,7 +8,7 @@ import os
 with open("yt_viral_model.pkl", "rb") as obj:
     model = pickle.load(obj)
 
-st.title("🎬 YouTube Viral Video Predictor")
+st.title("\U0001F3AC YouTube Viral Video Predictor")
 
 def set_background(image_file):
     with open(image_file, "rb") as img_file:
@@ -54,10 +54,10 @@ if st.button("Predict"):
     prediction = model.predict(input_data)[0]
 
     if prediction == 1:
-        st.success("🔥 Your video is predicted to go VIRAL!")
-        st.markdown("**Great job!** This video is likely to perform well. Keep it up! 🚀")
+        st.success("\U0001F525 Your video is predicted to go VIRAL!")
+        st.markdown("**Great job!** This video is likely to perform well. Keep it up! \U0001F680")
         st.markdown("[Explore more viral ideas](https://www.youtube.com/feed/trending)")
     else:
-        st.error("😞 This video might not go viral.")
-        st.markdown("Don't worry! Failure is just feedback. Improve your tags or engagement. 💡")
+        st.error("\U0001F61E This video might not go viral.")
+        st.markdown("Don't worry! Failure is just feedback. Improve your tags or engagement. \U0001F4A1")
         st.markdown("[Check trending content for inspiration](https://www.youtube.com/feed/trending)")

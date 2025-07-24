@@ -3,3 +3,5 @@ Who doesn't want to know will their video go viral or not, everyone has curiosit
 
 **Here is the dataset link:** 
 https://www.kaggle.com/datasets/dmitrynikolaev/youtube-dislikes-dataset
+
+It's build with Jupyter, Python and streamlit as framework.
